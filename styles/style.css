@@ -1,5 +1,7 @@
 .header {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
   margin: 92px 24px 96px;
   font-size: 18px;
   font-weight: 400;
@@ -7,15 +9,12 @@
 }
 
 .header__menu {
-  width: 391px;
-  margin-top: 44px;
-  margin-left: 26px;
+  border: 1px solid ;
 }
 
 .header__links-list {
     display: flex;
-    justify-content: space-between;
-   
+    justify-content: space-evenly;  
 }
 
 .header__links-list-item {
@@ -36,19 +35,26 @@
 }
 
 .header__logo {
-  width: 148px;
+  border: 1px solid ;
+  display: block;
+  align-self: center;
   height: 105px;
+  width: 148px;
+ 
+ /*
   margin-right: 185px;
   margin-left: 36px;
+  */
 }
+
 .header__logo-image {
   height: 105px;
   width: 148px;
 }
 
 .address {
-  display: flex;
-  flex-direction: column;
+  justify-self: end;
+  border: 1px solid black;
   line-height: 135%;
   text-underline-offset: 3.5px;
   letter-spacing: 0.01em;
@@ -224,7 +230,7 @@
   font-size: 20px;
   margin-top: 30px;
   margin-left: 64px;
-  text-underline-offset: 5px;
+  text-underline-position: under;
   
 }
 
@@ -295,7 +301,7 @@ gap: 24px;
   color: #000;
   text-align: center;
   line-height: 116%;
-  text-underline-offset: 4px;
+  text-underline-position: under;
 }
 
 .footer__menu-link_active {
