@@ -33,8 +33,7 @@
 .header__logo {
   display: block;
   align-self: center;
-  width: 148px;
-  
+  width: 148px; 
 }
 
 .header__logo-image {
@@ -50,6 +49,7 @@
   max-width: 240px;
   font-weight: 400;
   font-size: 18px;
+  font-style: normal;
   line-height: 135%;
   letter-spacing: 0.01em;
   text-underline-offset: 3.5px;
@@ -62,7 +62,7 @@
 .cover {
   position: relative;
   z-index: 1;
-  height: 757px;
+  min-height: 757px;
   color: #fff;
   background-image: url(../images/cover.jpg);
   background-position: center;
@@ -90,18 +90,18 @@
 }
 
 .cover-text {
-  display: block;
+  display: flex;
 }
 
 .aligned-text_center {
+  justify-content: center;
   margin-top: 18px;
   line-height: 100%;
-  text-align: center;
 }
 
 .aligned-text_right {
+  justify-content: right;
   margin-top: 20px;
-  padding-left: 583px;
   line-height: 100%;
 }
 
@@ -110,7 +110,7 @@
 }
 
 .no-letter-spacing {
-  letter-spacing: 0.3em;
+  letter-spacing: 0;
 }
 
 .cover__description {
@@ -132,7 +132,7 @@
 
 .bet-button {
   width: 256px;
-  height: 51px;
+  min-height: 51px;
   border: 1px solid #fff;
   color: #fff;
   font-weight: 500;
@@ -147,7 +147,7 @@
 }
 
 .lots__heading {
-  margin: 179px 915px 27px 64px;
+  margin: 179px 0px 27px 64px;
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
@@ -177,9 +177,11 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
+  min-height: 563px;
   padding-top: 51px;
   padding-bottom: 48px;
+  background-position: center;
+  background-size: cover;
 }
 
 .card__title {
@@ -201,21 +203,17 @@
 }
 
 .card_type_film {
-  background-image: url(../images/card-lot-01.jpg);
-  background-position: center;
-  background-size: cover;
+  background-image: url(../images/card-lot-01.jpg); 
 }
+
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-position: center;
-  background-size: cover;
 }
+
 .lots__look-more-link {
   display: block;
   margin-top: 30px;
@@ -223,21 +221,19 @@
   font-weight: 400;
   font-size: 20px;
   text-underline-position: under;
-  
 }
 
 .about {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 25px;
+  margin-top: 181px;
 }
 
 .about__column {
   display: grid;
   justify-content: center;
-  margin-top: 181px;
   margin-left: 23px;
-  
 }
 
 .about__logo {
@@ -255,7 +251,7 @@
 }
 
 .right_section {
-  margin-top: 284px;
+  margin-top: 102px;
   margin-right: 24px;
 }
 
