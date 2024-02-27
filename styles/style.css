@@ -55,10 +55,6 @@
   text-underline-offset: 3.5px;
 }
 
-.fs-normal {
-  font-style: normal;
-}
-
 .cover {
   position: relative;
   z-index: 1;
